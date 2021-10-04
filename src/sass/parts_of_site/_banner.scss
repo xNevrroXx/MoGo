@@ -1,0 +1,52 @@
+.banner {
+    padding-top: 28px;
+    padding-bottom: 27px;
+    min-height: 1000px;
+    background: url(../img/bg/bg_banner.jpg) center ( center / cover ) no-repeat;
+    &__mini-title {
+        color: #ffffff;
+        font-family: "Kaushan Script";
+        font-size: 72px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 42px;
+    }
+    &__welkome-title {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 150px;
+        font-weight: 700;
+        line-height: 140px;
+        text-align: center;
+        margin-bottom: 71px;
+    }
+    &__divider {
+        display: block;
+        margin: 0 auto;
+        width: 60px;
+        height: 3px;
+        background-color: #ffffff;
+        margin-bottom: 50px;
+    }
+    &__learn-more {
+        display: block;
+        margin: 0 auto;
+        width: 160px;
+        height: 40px;
+        border: 3px solid #ffffff;
+        background-color: transparent;
+        outline: none;
+        margin-bottom: 157px;
+        //text
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.1s all;
+        &:hover {
+            transform: scale(1.04);
+        }
+    }
+}

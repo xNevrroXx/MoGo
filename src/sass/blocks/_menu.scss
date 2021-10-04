@@ -1,0 +1,19 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 620px;
+    min-height: 18px;
+        a {
+            color: #ffffff;
+            &:hover {
+                color: #fce38a;
+            }
+            svg {
+                fill: #fff;
+                &:hover {
+                    fill: #fce38a;
+                }
+            }
+        }
+}

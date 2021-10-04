@@ -1,0 +1,23 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    display: block;
+    width: 1212px;
+    margin: 0 auto;
+}
+
+//reusable blocks
+@import 'blocks/menu';
+@import 'blocks/progress';
+@import 'blocks/title';
+@import 'blocks/subtitle';
+@import 'blocks/divider.scss';
+@import 'blocks/description';
+
+//parts of site
+@import 'parts_of_site/banner';
+@import 'parts_of_site/header';
+@import 'parts_of_site/about-us';

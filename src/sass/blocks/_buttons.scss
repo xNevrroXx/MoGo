@@ -1,0 +1,11 @@
+.banner {
+    min-height: 1000px;
+    background: url(../img/bg/bg_banner.jpg) center ( center / cover ) no-repeat;
+    &__logo {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: left;
+    }
+}

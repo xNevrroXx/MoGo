@@ -1,0 +1,36 @@
+.about-us {
+    padding-top: 91px;
+    padding-bottom: 110px;
+    background-color: #fff;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__wrapper-image {
+        display: block;
+        width: 380px;
+        height: 250px;
+        &:first-of-type {
+            background-image: url("../img/about-us/1.jpg");
+            &:hover {
+                background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
+                                  url("../img/about-us/1.jpg");
+            }
+        }
+        &:nth-of-type(2) {
+            background-image: url("../img/about-us/2.jpg");
+            &:hover {
+                background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
+                                  url("../img/about-us/2.jpg");
+            }
+        }
+        &:last-of-type {
+            background-image: url("../img/about-us/3.jpg");
+            &:hover {
+                background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%),
+                                  url("../img/about-us/3.jpg");
+            }
+        }
+    }
+}

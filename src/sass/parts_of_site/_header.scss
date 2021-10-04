@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 175px;
+    .logo {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: left;
+    }
+    &__menu {
+        padding-top: 8px;
+    }
+}
