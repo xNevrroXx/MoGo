@@ -5,6 +5,7 @@
 }
 .container {
     display: block;
+    position: relative;
     width: 1212px;
     margin: 0 auto;
 }
@@ -14,10 +15,16 @@
 @import 'blocks/progress';
 @import 'blocks/title';
 @import 'blocks/subtitle';
-@import 'blocks/divider.scss';
+@import 'blocks/divider';
 @import 'blocks/description';
+@import 'blocks/accordion';
 
 //parts of site
 @import 'parts_of_site/banner';
 @import 'parts_of_site/header';
 @import 'parts_of_site/about-us';
+@import 'parts_of_site/achievements';
+@import 'parts_of_site/services';
+@import 'parts_of_site/unique-design';
+@import 'parts_of_site/what-we-do';
+@import 'parts_of_site/quotes';

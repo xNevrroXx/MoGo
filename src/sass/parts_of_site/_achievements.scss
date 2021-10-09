@@ -1,0 +1,38 @@
+.achievements {
+    background-color: #95e1d3;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 270px;
+    }
+    &__divider {
+        width: 1px;
+        height: 270PX;
+        background-color: #ffffff;
+        opacity: 0.3;
+    }
+    &__wrapper-achieve {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 20%;
+    }
+    &__count {
+        color: #ffffff;
+        font-family: "Montserrat";
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 72px;
+        text-transform: uppercase;
+        margin-bottom: 29px;
+    }
+    &__descr {
+        color: #ffffff;
+        font-family: "Montserrat";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        text-transform: uppercase;
+    }
+}

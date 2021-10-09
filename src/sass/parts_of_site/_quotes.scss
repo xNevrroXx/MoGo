@@ -1,0 +1,69 @@
+.quotes {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #f8f8f8;
+    &__wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 150px;
+    }
+    &__wrapper-img-quote {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 150px;
+        border: 3px solid #95e1d3;
+        background-color: transparent;
+        margin-right: 60px;
+    }
+    &__img-quote {
+        display: block;
+        max-width: 63px;
+        max-height: 63px;
+    }
+    &__wrapper-quote {
+        width: 767px;
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__quote {
+        color: #999999;
+        font-family: "Roboto";
+        font-size: 24px;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 36px;
+        text-align: left;
+        margin-bottom: 23px;
+    }
+    &__wrapper-who-said {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__name-of-person {
+        color: #333333;
+        font-family: "Kaushan Script";
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left
+    }
+    .btn-prev, .btn-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        background: none;
+    }
+    .btn-prev {
+        left: -75px;
+    }
+    .btn-next {
+        right: -75px;
+    }
+}

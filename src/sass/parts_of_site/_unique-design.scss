@@ -1,0 +1,24 @@
+.unique-design {
+    padding-top: 109px;
+    background: url("../img/bg/design_for_all_BG.jpg") center ( center / cover ) no-repeat;
+    min-height: 850px;
+    &__wrapper-img {
+        display: block;
+        height: 572px;
+        width: 100%;
+        position: relative;
+    }
+    &__tablet-img {
+        display: block;
+        left: 335px;
+        bottom: -131px;
+        position: absolute;
+        overflow: hidden;
+    }
+    &__telephone-img {
+        left: 697px;
+        bottom: -91px;
+        position: absolute;
+        overflow: hidden;
+    }
+}

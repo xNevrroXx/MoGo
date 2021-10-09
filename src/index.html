@@ -7,8 +7,19 @@
     <title>MoGo</title>
 
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tiny-slider.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- bootstrap -->
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <!-- tiny slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> <!-- tiny slider -->
+    <!-- my script -->
+    <script defer src="js/script.js"></script>
 </head>
 <body>
     <section class="banner">
@@ -41,22 +52,22 @@
                 Learn more
             </button>
 
-            <div class="progress">
-                <div class="progress__stage">
-                    <div class="progress__line"></div>
-                    <div class="progress__title"><span>01</span> Intro</div>
+            <div class="progress-mine">
+                <div class="progress-mine__stage">
+                    <div class="progress-mine__line_first"></div>
+                    <div class="progress-mine__title"><span>01</span> Intro</div>
                 </div>
-                <div class="progress__stage">
-                    <div class="progress__line"></div>
-                    <div class="progress__title"><span>02</span> Work</div>
+                <div class="progress-mine__stage">
+                    <div class="progress-mine__line"></div>
+                    <div class="progress-mine__title"><span>02</span> Work</div>
                 </div>
-                <div class="progress__stage">
-                    <div class="progress__line"></div>
-                    <div class="progress__title"><span>03</span> About</div>
+                <div class="progress-mine__stage">
+                    <div class="progress-mine__line"></div>
+                    <div class="progress-mine__title"><span>03</span> About</div>
                 </div>
-                <div class="progress__stage">
-                    <div class="progress__line"></div>
-                    <div class="progress__title"><span>04</span> Contacts</div>
+                <div class="progress-mine__stage">
+                    <div class="progress-mine__line"></div>
+                    <div class="progress-mine__title"><span>04</span> Contacts</div>
                 </div>
             </div>
         </div>
@@ -66,21 +77,238 @@
         <div class="container">
             <div class="title">What we do</div>
             <div class="subtitle">Story about us</div>
-            <div class="divider"></div>
-            <div class="desciption">
+            <div class="divider divider_main"></div>
+            <div class="description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
-            <div class="about-us__wrapper">
-                <div class="about-us__wrapper-image">
-                    <!-- background image with hover effect -->
+            <div class="about-us__wrapper-images">
+                <div class="about-us__wrapper-for-hover">
+                    <div class="about-us__wrapper-bgImage">
+                        <!-- background image -->
+                    </div>
                 </div>
-                <div class="about-us__wrapper-image">
-                    <!-- background image with hover effect -->
+                <div class="about-us__wrapper-for-hover">
+                    <div class="about-us__wrapper-bgImage">
+                        <!-- background image -->
+                    </div>
                 </div>
-                <div class="about-us__wrapper-image">
-                    <!-- background image with hover effect -->
+                <div class="about-us__wrapper-for-hover">
+                    <div class="about-us__wrapper-bgImage">
+                        <!-- background image -->
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="achievements">
+        <div class="container">
+            <div class="achievements__wrapper">
+                <div class="achievements__divider"></div>
+                <div class="achievements__wrapper-achieve">
+                    <div class="achievements__count">42</div>
+                    <div class="achievements__descr">Web Design Projects</div>
+                </div>
+                <div class="achievements__divider"></div>
+                <div class="achievements__wrapper-achieve">
+                    <div class="achievements__count">123</div>
+                    <div class="achievements__descr">happy client</div>
+                </div>
+                <div class="achievements__divider"></div>
+                <div class="achievements__wrapper-achieve">
+                    <div class="achievements__count">15</div>
+                    <div class="achievements__descr">award winner</div>
+                </div>
+                <div class="achievements__divider"></div>
+                <div class="achievements__wrapper-achieve">
+                    <div class="achievements__count">99</div>
+                    <div class="achievements__descr">cup of coffee</div>
+                </div>
+                <div class="achievements__divider"></div>
+                <div class="achievements__wrapper-achieve">
+                    <div class="achievements__count">24</div>
+                    <div class="achievements__descr">members</div>
+                </div>
+                <div class="achievements__divider"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="title">We work with</div>
+            <div class="subtitle">Amazing Services</div>
+            <div class="divider divider_main"></div>
+            <div class="services__wrapper">
+                <div class="services__block-service">
+                    <img src="icons/services_block/ALARM.png" alt="good photography" class="services__image">
+                    <div class="services__wrapper-info">
+                        <div class="services__title-service">Photography</div>
+                        <div class="services__descr-service">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                    </div>
+                </div>
+                <div class="services__block-service">
+                    <img src="icons/services_block/LINE_GRAPH.png" alt="nice design" class="services__image">
+                    <div class="services__wrapper-info">
+                        <div class="services__title-service">Web Design</div>
+                        <div class="services__descr-service">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                    </div>
+                </div>
+                <div class="services__block-service">
+                    <img src="icons/services_block/computer.png" alt="" class="services__image">
+                    <div class="services__wrapper-info">
+                        <div class="services__title-service">Creativity</div>
+                        <div class="services__descr-service">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider divider_services"></div>
+            
+            <div class="services__wrapper">
+                <div class="services__block-service">
+                    <img src="icons/services_block/BOOK_2.png" alt="" class="services__image">
+                    <div class="services__wrapper-info">
+                        <div class="services__title-service">seo</div>
+                        <div class="services__descr-service">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</div>
+                    </div>
+                </div>
+                <div class="services__block-service">
+                    <img src="icons/services_block/HOME.png" alt="" class="services__image">
+                    <div class="services__wrapper-info">
+                        <div class="services__title-service">Css/Html</div>
+                        <div class="services__descr-service">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</div>
+                    </div>
+                </div>
+                <div class="services__block-service">
+                    <img src="icons/services_block/IMAGE.png" alt="" class="services__image">
+                    <div class="services__wrapper-info">
+                        <div class="services__title-service">digital</div>
+                        <div class="services__descr-service">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="unique-design">
+        <div class="container">
+            <div class="title">For all devices</div>
+            <div class="subtitle">Unique design</div>
+            <div class="divider divider_main"></div>
+            
+            <div class="unique-design__wrapper-img">
+                <img src="img/unique-design_block/display_bg_768x1024.png" alt="tablet" class="unique-design__tablet-img">
+                <img src="img/unique-design_block/telephone.png" alt="telephone" class="unique-design__telephone-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="what-we-do">
+        <div class="container">
+            <div class="title">Service</div>
+            <div class="subtitle">what we do</div>
+            <div class="divider divider_main"></div>
+            <div class="description description_mb92">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+
+            <div class="what-we-do__wrapper">
+                <img src="img/unique-design_block/photo_work.jpg" alt="work in progress" class="what-we-do__photo-work">
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <img src="icons/unique-design_block/PICTURE.png" alt="" class="what-we-do__img what-we-do__menu-img-title">
+                                <div class="what-we-do__menu-title">Photography</div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <img src="icons/unique-design_block/EQUALIZER.png" alt="" class="what-we-do__img what-we-do__menu-img-title">
+                                <div class="what-we-do__menu-title">creativity</div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, doloremque corporis? Asperiores officiis illum quis laborum, error fuga nostrum provident explicabo libero atque, fugiat quibusdam aspernatur reprehenderit, aliquam minima? Voluptates.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <img src="icons/unique-design_block/BULLSEYE.png" alt="" class="what-we-do__img what-we-do__menu-img-title">
+                                <div class="what-we-do__menu-title">web design</div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo reiciendis quo accusantium at dicta temporibus omnis eos dolore laudantium sapiente quis in rem numquam? Necessitatibus, odio deleniti. Architecto, tempora?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quotes">
+        <div class="container">
+            <div class="slider-for-qoutes"> <!-- tiny slider -->
+                <div>
+                    <div class="quotes__wrapper">
+                        <div class="quotes__wrapper-img-quote">
+                            <img src="icons/quotes_block/SPEECH_4.png" alt="qutes image" class="quotes__img-quote">
+                        </div>
+                        <div class="quotes__wrapper-quote">
+                            <div class="quotes__quote">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</div>
+                            <div class="quotes__wrapper-who-said">
+                                <div class="divider divider_quotes"></div>
+                                <div class="quotes__name-of-person">Jon Doe</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="quotes__wrapper">
+                        <div class="quotes__wrapper-img-quote">
+                            <img src="icons/quotes_block/SPEECH_4.png" alt="qutes image" class="quotes__img-quote">
+                        </div>
+                        <div class="quotes__wrapper-quote">
+                            <div class="quotes__quote">Поиграю пару часов и пол-часика позанимаюсь</div>
+                            <div class="quotes__wrapper-who-said">
+                                <div class="divider divider_quotes"></div>
+                                <div class="quotes__name-of-person">Vladimir Govorov</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="quotes__wrapper">
+                        <div class="quotes__wrapper-img-quote">
+                            <img src="icons/quotes_block/SPEECH_4.png" alt="qutes image" class="quotes__img-quote">
+                        </div>
+                        <div class="quotes__wrapper-quote">
+                            <div class="quotes__quote">Счастлив, как собака</div>
+                            <div class="quotes__wrapper-who-said">
+                                <div class="divider divider_quotes"></div>
+                                <div class="quotes__name-of-person">Vladimir Govorov</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-prev"><img src="icons/quotes_block/left_arrow.png" alt="left arrow"></button>
+            <button class="btn-next"><img src="icons/quotes_block/right_arrow.png" alt="right arrow"></button>
         </div>
     </section>
 </body>

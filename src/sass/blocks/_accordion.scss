@@ -1,0 +1,9 @@
+.accordion {
+    max-height: 380px;
+    .accordion-button {
+        height: 60px;
+        &:not(.collapsed) {
+            background-color: #ffffff;
+        }
+    }
+}
