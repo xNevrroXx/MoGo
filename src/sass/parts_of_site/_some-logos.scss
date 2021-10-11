@@ -1,0 +1,15 @@
+.some-logos {
+    min-height: 250px;
+    padding-top: 51px;
+    padding-bottom: 50px;
+    background-color: #f8f8f8;
+    &__wrapper-images {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    &__image-logo {
+        width: 163px;
+    }
+}

@@ -1,13 +1,48 @@
 .cards-with-hover {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    width: 100%;
+    &_collage {
+        height: 780px;
+    }
+    &__left-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 50%;
+        height: 100%;
+    }
+    &__right-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 50%;
+        height: 100%;
+    }
+    &__wrapper-card {
+        &_collage {
+            width: 480px;
+            height: 50%;
+            &[data-bigCard='true'] {
+                height: 100%;
+            }
+        }
+    }
     &__for-hoverBG {
         display: block;
         width: 380px;
         height: 250px;
-        &_for-photo {
+        &_for-photo-of-people {
             height: 470px;
+        }
+        &_collage { //Для коллажа. Изменение назначения - не по БЭМУ. Надо сделать лучше. Мешает сейчас description
+            width: 100%;
+            height: 100%;
         }
     }
     &__bgImage {
@@ -56,6 +91,7 @@
         line-height: 18px;
         text-align: center;
         text-transform: uppercase;
+        //для третьей анимации
         &_two-subtitles {
             font-size: 14px;
             font-weight: 400;

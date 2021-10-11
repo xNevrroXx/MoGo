@@ -2,6 +2,11 @@
     padding-top: 70px;
     padding-bottom: 70px;
     background-color: #f8f8f8;
+    &__wrapper-slider {
+        display: block;
+        margin: 0 auto;
+        width: 1152px;
+    }
     &__wrapper {
         display: flex;
         justify-content: flex-start;
@@ -17,11 +22,22 @@
         border: 3px solid #95e1d3;
         background-color: transparent;
         margin-right: 60px;
+        &_photo-of-people {
+            width: 210px;
+            height: 210px;
+            border: none;
+        }
     }
     &__img-quote {
         display: block;
         max-width: 63px;
         max-height: 63px;
+        &_photo-of-people {
+            width: 100%;
+            height: 100%;
+            max-width: none;
+            max-height: none;
+        }
     }
     &__wrapper-quote {
         width: 767px;
@@ -53,17 +69,18 @@
         line-height: 24px;
         text-align: left
     }
-    .btn-prev, .btn-next {
+    .btn-prev,   .btn-next,
+    .btn-prev-2, .btn-next-2  {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         border: none;
         background: none;
     }
-    .btn-prev {
+    .btn-prev, .btn-prev-2 {
         left: -75px;
     }
-    .btn-next {
+    .btn-next, .btn-next-2 {
         right: -75px;
     }
 }
