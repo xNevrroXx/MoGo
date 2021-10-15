@@ -1,0 +1,9 @@
+.latest-blog {
+    padding-top: 112px;
+    padding-bottom: 116px;
+    &__wrapper-stories {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

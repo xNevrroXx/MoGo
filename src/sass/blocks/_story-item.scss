@@ -1,0 +1,94 @@
+.story-item {
+    width: 380px;
+    min-height: 384px;
+    display: flex;
+    flex-direction: column;
+    &_rows-justify {
+        width: 100%;
+        height: 79px;
+        min-height: 0;
+        flex-direction: row;
+    }
+    &__wrapper-image {
+        position: relative;
+        width: 100%;
+        height: 240px;
+        margin-bottom: 20px;
+        &_rows-justify {
+            width: 119px;
+            height: 79px;
+            margin-right: 20px;
+            margin-bottom: 0;
+        }
+    }
+    &__image-story {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    &__block-date {
+        background-color: #95e1d3;
+        position: absolute;
+        top: 160px;
+        left: -10px;
+        width: 60px;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: #ffffff;
+    }
+    &__day-of-month {
+        font-family: "Montserrat";
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+    &__month {
+        font-family: "Roboto";
+        font-style: italic;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+    &__full-date {
+        color: #999999;
+        font-family: "Roboto";
+        font-size: 13px;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 13px;
+        text-align: left;
+    }
+    &__wrapper-info-story {
+        height: 100%;
+        padding-top: 21px;
+        padding-bottom: 7px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__wrapper-achievements {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__achievement-story-comments {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-right: 20px;
+    }
+    &__achievement-story-saw {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__img-achieve {
+        margin-right: 7px;
+    }
+}

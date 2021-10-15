@@ -32,7 +32,7 @@ const aboutUsImagesWithHover = new ObjCards(
     ourWorksImagesWithHover = new ObjCards(
         ".our-works",
         [
-            //left side
+/*             //left side
             `url("img/our-works_block/human_1.jpg")`,
             `url("img/our-works_block/architecture_2.jpg")`,
             `url("img/our-works_block/bridge_3.jpg")`,
@@ -40,6 +40,15 @@ const aboutUsImagesWithHover = new ObjCards(
             //right side
             `url("img/our-works_block/sea_1.jpg")`,
             `url("img/our-works_block/glass-panorama_2.jpg")`,
+            `url("img/our-works_block/skyscraper_3.jpg")` */
+
+            //test grid
+            `url("img/our-works_block/human_1.jpg")`,
+            `url("img/our-works_block/architecture_2.jpg")`,
+            `url("img/our-works_block/sea_1.jpg")`,
+            `url("img/our-works_block/glass-panorama_2.jpg")`,
+            `url("img/our-works_block/bridge_3.jpg")`,
+            `url("img/our-works_block/sun-through-the-walls_4.jpg")`,
             `url("img/our-works_block/skyscraper_3.jpg")`
         ],
         3

@@ -1,0 +1,35 @@
+.our-location {
+    background: url("../img/bg/open_Map_BG.jpg") center ( center / cover) no-repeat;
+    height: 200px;
+    padding-top: 57px;
+    padding-bottom: 57px;
+    &__image-map-marker {
+        max-width: 20px;
+        min-height: 26px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 18px;
+    }
+    &__wrapper-link {
+        margin-bottom: 21px;
+    }
+    &__link-to-map {
+        display: block;
+        width: 140px;
+        margin: 0 auto;
+        color: #f38181;
+        font-family: "Montserrat";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: 0.1s all;
+        &:hover {
+            color: #f38181;
+            text-decoration: none;
+            transform: scale(1.14);
+        }
+    }
+}

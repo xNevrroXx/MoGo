@@ -19,6 +19,7 @@
 @import 'blocks/description';
 @import 'blocks/accordion';
 @import 'blocks/cards-with-hover';
+@import 'blocks/story-item';
 
 //parts of site
 @import 'parts_of_site/banner';
@@ -33,3 +34,6 @@
 @import 'parts_of_site/some-logos';
 @import 'parts_of_site/our-works';
 @import 'parts_of_site/feedbacks';
+@import 'parts_of_site/latest-blog';
+@import 'parts_of_site/our-location';
+@import 'parts_of_site/footer';

@@ -3,7 +3,6 @@
     margin: 0 auto;
     width: 955px;
     margin-bottom: 100px;
-    
     //text
     color: #999999;
     font-family: 'Roboto';
@@ -14,9 +13,20 @@
     &_mb92 {
         margin-bottom: 92px;
     }
-    &_feedback-block {
+    &_left-width-100 {
         text-align: left;
         margin-bottom: 0;
         width: 100%;
+        &_mb49 {
+            margin-bottom: 49px;
+        }
+        &_bold {
+            color: #333333;
+            font-family: "Montserrat";
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 16px;
+        }
     }
 }
